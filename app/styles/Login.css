@@ -1,0 +1,74 @@
+.login {
+  width: 100%;
+  height: 100%;
+  padding-top: 0.85rem; }
+  .login .logo {
+    width: 2.65rem;
+    height: 2.88rem;
+    margin: 0 auto; }
+    .login .logo img {
+      width: 100%;
+      height: 100%; }
+  .login .main {
+    width: 6.7rem;
+    margin: 1rem auto 0; }
+    .login .main .form-group:not(:last-child) {
+      background-color: rgba(0, 0, 0, 0.5);
+      -webkit-border-radius: 4px;
+      border-radius: 4px; }
+    .login .main .form-group {
+      margin-bottom: 2px;
+      overflow: hidden; }
+      .login .main .form-group:after {
+        content: '';
+        display: block;
+        clear: both; }
+      .login .main .form-group .fontImg {
+        display: inline-block;
+        width: 1rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 0.9rem;
+        opacity: 0.7;
+        float: left;
+        text-align: center;
+        line-height: 0.9rem;
+        font-size: 0.37rem; }
+        .login .main .form-group .fontImg span.fa {
+          margin-top: 0.265rem;
+          font-size: 0.37rem;
+          color: #958b9e; }
+      .login .main .form-group input.form-control {
+        display: inline-block;
+        width: 5.7rem;
+        height: 0.9rem;
+        padding-left: 0.3rem;
+        background: none;
+        border: none;
+        float: left;
+        color: #958b9e; }
+        .login .main .form-group input.form-control:focus {
+          outline: none; }
+    .login .main .loginBtn {
+      display: block;
+      width: 6.7rem;
+      height: 0.9rem;
+      margin: 0.3rem auto 0;
+      background-color: #ff9100;
+      text-align: center;
+      line-height: 0.9rem;
+      font-size: 0.32rem;
+      color: #fff;
+      text-decoration: none;
+      -webkit-border-radius: 4px;
+      border-radius: 4px; }
+    .login .main .fogetPassword {
+      display: inline-block;
+      margin-top: 0.2rem;
+      color: #cec8d9;
+      text-decoration: none;
+      vertical-align: top;
+      font-size: 0.28rem; }
+      .login .main .fogetPassword span.fa {
+        margin-right: 0.28rem; }
+
+/*# sourceMappingURL=Login.css.map */

@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>buyou</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="libs/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <section class="login">
+      <header class="logo">
+        <img src="images/logo.png" alt="">
+      </header>
+      <section class="main">
+        <div class="form-group">
+          <a href="#" class="fontImg"><span class="fa fa-user"></span></a>
+          <input type="text" placeholder="请输入已经验证的手机号或者邮箱" class="form-control">
+        </div>
+        <div class="form-group">
+          <a href="#" class="fontImg"><span class="fa fa-lock"></span></a>
+          <input type="password" placeholder="请输入密码" class="form-control">
+        </div>
+        <div class="form-group btn-group" data-btn="true">
+          <a class="loginBtn" href="javascript:;">登录</a>
+          <a href="" class="fogetPassword"><span class="fa fa-question-circle-o" aria-hidden="true"></span>忘记密码？</a>
+        </div>
+      </section>
+    </section>
+    
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- build:js libs/zepto/zepto.js -->
+    <script src="libs/zepto/zepto.js"></script>
+    <!-- endbuild -->
+
+    <script>
+      var designWidth = 7.5;
+      var resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
+      window.addEventListener(resizeEvent, recalc, false);
+      document.addEventListener('DOMContentLoaded', recalc, false);
+
+      function recalc(){
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / designWidth + 'px';
+      };
+    </script>
+  </body>
+</html>
