@@ -1,0 +1,15 @@
+
+@mixin btn($bgc: #eb4f38,$radius: 4px, $height: 0.9rem, $display: inline-block){
+    display: $display;
+    min-width: 1rem;
+    border-radius: $radius;
+    text-align: center;
+    line-height: $height;
+    background-color: $bgc;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn.btn-danger {
+    @include btn($bgc: #eb4f38, $display: block);
+}
