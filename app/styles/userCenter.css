@@ -29,7 +29,8 @@
   .userCenter .options {
     background-color: #eaeaea;
     width: 100%;
-    margin-top: 0.2rem; }
+    margin-top: 0.2rem;
+    margin-bottom: 1rem; }
     .userCenter .options > ul {
       width: 100%; }
       .userCenter .options > ul:after {
