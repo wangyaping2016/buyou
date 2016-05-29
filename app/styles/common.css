@@ -1,12 +1,16 @@
 .btn.btn-danger {
+  width: 1rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
   display: block;
   min-width: 1rem;
   border-radius: 4px;
+  margin: 0 auto;
   text-align: center;
-  line-height: 0.9rem;
   background-color: #eb4f38;
   text-decoration: none;
-  color: #fff; }
+  color: #fff;
+  font-size: 0.3rem; }
 
 .hideBox {
   display: none; }
@@ -51,5 +55,55 @@
     transform: translate(0, 0); }
   100% {
     transform: translate(0.1rem, 0.1rem); } }
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.c-panel {
+  margin: 0.2rem 0;
+  background-color: #fff;
+  font-size: 0.3rem; }
+  .c-panel .title {
+    height: 0.6rem;
+    line-height: 0.6rem; }
+    .c-panel .title img {
+      vertical-align: middle;
+      width: 0.6rem;
+      height: 0.6rem; }
+  .c-panel .body {
+    padding: 0 0.2rem; }
+
+.list-group {
+  height: 1.2rem;
+  border-bottom: 1px solid #eaeaea; }
+  .list-group .caption {
+    float: left;
+    padding: 0.15rem 0; }
+    .list-group .caption .box {
+      width: 1.35rem;
+      height: 0.89rem;
+      text-align: center;
+      line-height: 0.89rem;
+      font-size: 0.6rem; }
+    .list-group .caption p {
+      font-size: 0.2rem; }
+    .list-group .caption h3 {
+      font-size: 0.3rem;
+      margin-bottom: 0.18rem; }
+  .list-group .status {
+    width: 1.35rem;
+    height: 1.2rem;
+    text-align: center;
+    line-height: 1.2rem;
+    color: #646464;
+    font-size: 0.3rem; }
+  .list-group .left {
+    float: left; }
+  .list-group .right {
+    float: right; }
+
+.text-danger {
+  color: red; }
 
 /*# sourceMappingURL=common.css.map */

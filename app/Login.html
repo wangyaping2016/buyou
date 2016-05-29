@@ -35,11 +35,11 @@
       <section class="main">
         <div class="form-group">
           <a href="#" class="fontImg"><span class="fa fa-user"></span></a>
-          <input type="text" placeholder="请输入已经验证的手机号或者邮箱" class="form-control">
+          <input type="text" id="userInput" placeholder="请输入已经验证的手机号或者邮箱" class="form-control">
         </div>
         <div class="form-group">
           <a href="#" class="fontImg"><span class="fa fa-lock"></span></a>
-          <input type="password" placeholder="请输入密码" class="form-control">
+          <input type="password" id="passwordInput" placeholder="请输入密码" class="form-control">
         </div>
         <div class="form-group btn-group" data-btn="true">
           <a class="loginBtn" href="javascript:;">登录</a>
@@ -56,15 +56,22 @@
     <!-- endbuild -->
 
     <script>
-      var designWidth = 7.5;
-      var resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
+        var designWidth = 7.5;
+        var resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
 
-      window.addEventListener(resizeEvent, recalc, false);
-      document.addEventListener('DOMContentLoaded', recalc, false);
+        window.addEventListener(resizeEvent, recalc, false);
+        document.addEventListener('DOMContentLoaded', recalc, false);
 
-      function recalc(){
-        document.documentElement.style.fontSize = document.documentElement.clientWidth / designWidth + 'px';
-      };
+        function recalc(){
+          document.documentElement.style.fontSize = document.documentElement.clientWidth / designWidth + 'px';
+        };
+    </script>
+    <script>
+        $(function(){
+            $('.loginBtn').bind('click', function(){
+                
+            })
+        })
     </script>
   </body>
 </html>

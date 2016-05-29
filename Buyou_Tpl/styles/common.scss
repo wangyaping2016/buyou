@@ -1,0 +1,77 @@
+
+@mixin btn($bgc: #eb4f38,$radius: 4px, $height: 0.9rem, $display: inline-block){
+    display: $display;
+    min-width: 1rem;
+    border-radius: $radius;
+    text-align: center;
+    line-height: $height;
+    background-color: $bgc;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn.btn-danger {
+    @include btn($bgc: #eb4f38, $display: block);
+}
+
+// hide box
+.hideBox {
+    display: none;
+    
+}
+
+// preload style
+#preloaderBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #0b0714;
+    overflow: hidden;
+    -webkit-transition: height 1.5s ease-out;
+    
+
+    > div {
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+    .spinner {
+        border: 0.2rem solid #0b0714;
+        border-top: 0.2rem solid #7f1ccd;
+        border-radius: 4rem;
+        font-size: 0.5rem;
+        color: #656366;
+
+        -webkit-animation: spinner 2s linear infinite;
+    }
+    .text {
+        text-align: center;
+        line-height: 3.8rem;
+        overflow: hidden;
+        font-size: 0.5rem;
+        color: #999;
+        -webkit-animation: repeatAnimate 1s ease infinite;
+    }
+
+    @keyframes spinner {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes repeatAnimate {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(0.1rem, 0.1rem);
+        }
+    }
+}

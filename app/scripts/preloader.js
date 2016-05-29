@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', function(){
     preloaderBox.id = 'preloaderBox';
     spinner.className = 'spinner';
     text.className = 'text';
-    text.innerHTML = '加载中'
+    text.innerHTML = '加载中';
 
-    preloaderBox.appendChild(spinner)
+    preloaderBox.appendChild(spinner);
     preloaderBox.appendChild(text);
     document.body.insertBefore(preloaderBox, hideBox);
 
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function(){
           }
       };
       imgObj.onerror = function(){
-          alert('网络不给力。。。')
-      }
+          alert('网络不给力。。。');
+      };
     }
 }, false);

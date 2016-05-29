@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
+<title>buyou</title>
+
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- Place favicon.ico in the root directory -->
+
+<!-- build:css styles/vendor.css -->
+<!-- bower:css -->
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:css styles/main.css -->
+<link rel="stylesheet" href="styles/main.css">
+<!-- endbuild -->
+
+<!-- build:js scripts/vendor/modernizr.js -->
+<script src="libs/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+</head>
+<body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="user-info">
+        <section class="content">
+            <div class="form-group">
+                <h3 class="left">开户银行</h3>
+                <p class="right">
+                    <select name="type">
+                        <option value="">请选择</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                </p>
+            </div>
+            <div class="form-group">
+                <h3 class="left">开户人姓名</h3>
+                <p class="right">布优</p>
+            </div>
+            <div class="form-group">
+                <h3 class="left">开户账号</h3>
+                <p class="right">1231231231</p>
+            </div>
+            <div class="form-group">
+                <h3 class="left">开户地址</h3>
+                <p class="right">中国山东</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- build:js libs/zepto/zepto.js -->
+    <script src="libs/zepto/zepto.js"></script>
+    <!-- endbuild -->
+
+    <script>
+        (function(window, document){
+            var designWidth = 7.5;
+            // orientationchange：屏幕发生翻转时触发的事件
+            var resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
+            function recalc(){
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / designWidth + 'px';
+            }
+
+            document.addEventListener('DOMContentLoaded', recalc, false);
+            window.addEventListener(resizeEvent, recalc, false);
+
+        })(window, document);
+    </script>
+</body>
+</html>

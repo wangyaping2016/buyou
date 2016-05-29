@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <title>buyou</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css __TMPL__Buyou/styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css __TMPL__Buyou/styles/main.css -->
+    <link rel="stylesheet" href="__TMPL__Buyou/styles/main.css">
+    <script>
+        window._ROOT = {
+            ROOT: '__ROOT__'
+        }
+    </script>
+    <!-- endbuild -->
+    
+    <!-- build:js __TMPL__Buyou/scripts/vendor/modernizr.js -->
+    <script src="__TMPL__Buyou/libs/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    
+    <script src="__TMPL__Buyou/scripts/preloader.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <section class="login hideBox">
+      <header class="logo">
+        <img src="__TMPL__Buyou/images/logo.png" alt="">
+      </header>
+      <section class="main">
+        <div class="form-group">
+          <a href="#" class="fontImg"><span class="fa fa-user"></span></a>
+          <input type="text" id="userInput" placeholder="请输入已经验证的手机号或者邮箱" class="form-control">
+        </div>
+        <div class="form-group">
+          <a href="#" class="fontImg"><span class="fa fa-lock"></span></a>
+          <input type="password" id="passwordInput" placeholder="请输入密码" class="form-control">
+        </div>
+        <div class="form-group btn-group" data-btn="true">
+          <a class="loginBtn" href="javascript:;">登录</a>
+          <a href="" class="fogetPassword"><span class="fa fa-question-circle-o" aria-hidden="true"></span>忘记密码？</a>
+        </div>
+      </section>
+    </section>
+    
+    
+    <!-- build:js __TMPL__Buyou/scripts/main.js -->
+    <script src="__TMPL__Buyou/scripts/main.js"></script>
+    <!-- build:js __TMPL__Buyou/libs/zepto/zepto.js -->
+    <script src="__TMPL__Buyou/libs/zepto/zepto.js"></script>
+    <!-- endbuild -->
+
+    <script>
+      var designWidth = 7.5;
+      var resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
+      window.addEventListener(resizeEvent, recalc, false);
+      document.addEventListener('DOMContentLoaded', recalc, false);
+
+      function recalc(){
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / designWidth + 'px';
+      };
+    </script>
+    <script>
+        // ajax登录
+        document.addEventListener('DOMContentLoaded', loginAjax, false);
+
+        function loginAjax(){
+            var loginBtn = document.querySelector('.loginBtn');
+            var userInput = document.querySelector('#userInput');
+            var passwordInput = document.querySelector('#passwordInput');
+
+            loginBtn.addEventListener('click', function(){
+                var XHR = new XMLHttpRequest();
+
+                XHR.open('GET', 'http://app.buuyou.com/api/app?type=userlogin&Email=' + userInput.value + '&PassWord=' + passwordInput.value);
+                XHR.onreadystatechange = ajaxCallback;
+                XHR.send(null);
+                function ajaxCallback(){
+                   if (XHR.readyState == 4) {
+                      if (XHR.status == 200) {
+                          console.log(XHR.reponseText);
+                      }
+                   }
+                }
+            }, false);
+
+        }
+    </script>
+  </body>
+</html>

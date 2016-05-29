@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>buyou</title>
+
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- Place favicon.ico in the root directory -->
+
+<!-- build:css __TMPL__Buyou/styles/vendor.css -->
+<!-- bower:css -->
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:css __TMPL__Buyou/styles/main.css -->
+<link rel="stylesheet" href="__TMPL__Buyou/styles/main.css">
+<!-- endbuild -->
+
+<!-- build:js scripts/vendor/modernizr.js -->
+<script src="__TMPL__Buyou/libs/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+</head>
+<body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="userCenter">
+        <section class="userBox">
+            <div class="userImg">
+                <img src="__TMPL__Buyou/images/user-image.jpg" alt="用户头像">
+            </div>
+            <div class="caption">
+                <h2 class="title">布优销卡</h2>
+                <p>ID：123456789@qq.com</p>
+                <p>密钥: 123456</p>
+            </div>
+        </section>
+        <section class="options">
+            <ul>
+                <li><a href="#"><span class="fa fa-user"></span>基本资料</a></li>
+                <li><a href="#"><span class="fa fa-credit-card-alt"></span>账户信息</a></li>
+                <li><a href="#"><span class="fa fa-gears"></span>安全中心</a></li>
+                <li><a href="#"><span class="fa fa-lock"></span>修改密码</a></li>
+                <li><a href="#"><span class="fa fa-calendar"></span>登录日至</a></li>
+                <li><a href="#"><span class="fa fa-percent"></span>通道费率</a></li>
+                <li><a href="#"><span class="fa fa-info-circle"></span>关于</a></li>
+                <li><a href="#"><span class="fa fa-arrow-circle-o-up"></span>版本更新</a></li>
+            </ul>
+            <div class="logoutBtn">
+                <a href="" class="btn btn-danger">退出</a>
+            </div>
+        </section>
+        <section class="footerBar">
+            <ul>
+                <li><a href=""><span class="fa fa-home"></span><br />首页</a></li>
+                <li><a href=""><span class="fa fa-home"></span><br />账单</a></li>
+                <li><a href=""><span class="fa fa-home"></span><br />账户管理</a></li>
+                <li><a href=""><span class="fa fa-home"></span><br />公告</a></li>
+                <li class="active"><a href=""><span class="fa fa-home"></span><br />我的</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- build:js __TMPL__Buyou/libs/zepto/zepto.js -->
+    <script src="__TMPL__Buyou/libs/zepto/zepto.js"></script>
+    <!-- endbuild -->
+
+    <script>
+        (function(window, document){
+            var designWidth = 7.5;
+            // orientationchange：屏幕发生翻转时触发的事件
+            var resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
+            function recalc(){
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / designWidth + 'px';
+            }
+
+            document.addEventListener('DOMContentLoaded', recalc, false);
+            window.addEventListener(resizeEvent, recalc, false);
+
+        })(window, document);
+    </script>
+</body>
+</html>

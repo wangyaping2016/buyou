@@ -1,18 +1,23 @@
 
-@mixin btn($bgc: #eb4f38,$radius: 4px, $height: 0.9rem, $display: inline-block){
+@mixin btn($bgc: #eb4f38,$radius: 4px, $height: 0.9rem, $display: inline-block, $width: 1rem){
+    width: $width;
+    height: $height;
+    line-height: $height;
     display: $display;
     min-width: 1rem;
     border-radius: $radius;
+    margin: 0 auto;
     text-align: center;
-    line-height: $height;
     background-color: $bgc;
     text-decoration: none;
     color: #fff;
+    font-size: 0.3rem;
 }
 
 .btn.btn-danger {
     @include btn($bgc: #eb4f38, $display: block);
 }
+
 
 // hide box
 .hideBox {
@@ -75,3 +80,78 @@
         }
     }
 }
+.clearfix {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.c-panel {
+    margin: 0.2rem 0;
+    background-color: #fff;
+    font-size: 0.3rem;
+
+    .title {
+        height: 0.6rem;
+        line-height: 0.6rem;
+        
+        img {
+            vertical-align: middle;
+            width: 0.6rem;
+            height: 0.6rem;
+        }
+    }
+    .body {
+        padding: 0 0.2rem;
+    }
+}
+
+.list-group {
+    height: 1.2rem;
+    border-bottom: 1px solid #eaeaea;
+
+    .caption {
+        .box {
+            width: 1.35rem;
+            height: 0.89rem;
+            text-align: center;
+            line-height: 0.89rem;
+            font-size: 0.6rem;
+        }
+        float: left;
+        padding: 0.15rem 0;
+
+        p {
+            font-size: 0.2rem;
+        }
+        h3 {
+            font-size: 0.3rem;
+            margin-bottom: 0.18rem;
+        }
+    }
+    .status {
+        width: 1.35rem;
+        height: 1.2rem;
+        text-align: center;
+        line-height: 1.2rem;
+        color: #646464;
+        font-size: 0.3rem;
+    }
+
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+}
+
+.text-danger {
+    color: red;
+}
+
+
+
+
