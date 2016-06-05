@@ -1,0 +1,87 @@
+
+// money page
+.money {
+	$width: 100%;
+
+	.header {
+		width: $width;
+		&:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		li {
+			width: $width / 3;
+			height: 0.8rem;
+			float: left;
+			line-height: 0.8rem;
+			text-align: center;
+			background-color: wait;
+			font-size: 16px;
+		}
+		.active{
+			 border-bottom:1px solid #ff9100;
+			 color: #ff9100;
+		}
+		.appliction{
+	         color: #646464;
+		}
+		.have{
+	         color: #646464;
+		}
+	}
+	.content {
+		padding: 0 0.4rem;
+		background-color:#fff;
+		.information{
+            background-color:#f5f3f0;
+            font-size:0.1rem;   
+            color: #b7b6b5;         
+		}
+		.group{
+			height: 1rem;
+			border-bottom: 1px solid #eaeaea;
+			// color: #b7b6b5;
+			line-height: 1rem;
+			font-size: 0.12rem;
+
+			.left {
+				float: left;
+			}
+			.right {
+				float: right;
+			}
+			.txright{
+				float: right;
+
+				 input{
+				 	border:none;
+                    margin-left:0.2rem;
+				 }
+			}
+
+			input:focus {
+				outline: none;
+			}
+
+		}
+	}
+	.sub{
+		width: 100%;
+		background-color:#f5f3f0;
+		overflow: hidden;
+		.btn{
+			display: block;
+			width: 6.9rem;
+			height: 0.8rem;
+			background-color:#fff;
+			margin: 0.2rem auto;
+			font-size: 0.3rem;
+			color: #b7b6b5;
+            text-align: center;
+            line-height: 0.8rem;
+		    text-decoration: none;
+		    border-radius:0.1
+		}	
+	}
+}

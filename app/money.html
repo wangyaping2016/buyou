@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <title>buyou</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="libs/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="money">
+      <ul class="header">
+        <li class="active"><p>提现申请</p></li>
+        <li class="appliction"><p>申请列表</p></li>
+        <li class="have"><p>已提现列表</p></li>
+      </ul>
+      <section class="content">
+        <div class="information">
+           <h4>账户信息</h4>
+        </div>
+        <div class="group">
+          <span class="left">开户银行</span>
+          <span class="right">中国农业银行</span>
+        </div>
+        <div class="group">
+          <span class="left">开户人姓名</span>
+          <span class="right">尉鑫鑫</span>
+        </div>
+        <div class="group">
+          <span class="left">开户账号</span>
+          <span class="right">12345678912345678912</span>
+        </div>
+        <div class="group">
+          <span class="left">开户行详细地址</span>
+          <span class="right">哈哈路123号</span>
+        </div>
+        <div class="information">
+           <h4>提现操作</h4>
+        </div>
+        <div class="group">
+          <span class="left">账户余额</span>
+          <span class="right">1000000.00元</span>
+        </div>
+        <div class="group">
+          <span class="left">结算模式</span>
+          <span class="right">T+1</span>
+        </div>
+        <div class="group">
+          <span class="left">可结算金额</span>
+          <span class="right">10000元</span>
+        </div>
+        <div class="group">
+          <span class="left">最低提现金额</span>
+          <span class="right">1000元</span>
+        </div>
+        <div class="group">
+          <span class="left">每日提现时间</span>
+          <span class="right">10:00-22:00</span>
+        </div>
+        <div class="group">
+          <span class="left">提现金额</span>
+          <span class="txright" ><input type="text" placeholder="提现金额为整数" name="tx"></span>
+        </div>
+        <div class="group">
+          <span class="left">安全码</span>
+          <span class="txright"><input type="text" placeholder="请输入安全码" name="tx"></span>
+        </div>
+      </section>
+      <div class="sub">
+       <a href="#" class="btn">提交</a>
+      </div>
+    </div>
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- build:js libs/zepto/zepto.js -->
+    <script src="libs/zepto/zepto.js"></script>
+    <!-- endbuild -->
+
+    <script>
+      var designWidth = 7.5;
+      var resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
+      window.addEventListener(resizeEvent, recalc, false);
+      document.addEventListener('DOMContentLoaded', recalc, false);
+
+      function recalc(){
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / designWidth + 'px'
+      }
+    </script>
+  </body>
+</html>

@@ -3595,4 +3595,375 @@ body {
   background-color: #f5f3f0;
 }
 
+.money .header {
+  width: 100%;
+}
+.money .header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.money .header li {
+  width: 33.33333%;
+  height: 0.8rem;
+  float: left;
+  line-height: 0.8rem;
+  text-align: center;
+  background-color: wait;
+  font-size: 16px;
+}
+.money .header .active {
+  border-bottom: 1px solid #ff9100;
+  color: #ff9100;
+}
+.money .header .appliction {
+  color: #646464;
+}
+.money .header .have {
+  color: #646464;
+}
+.money .content {
+  padding: 0 0.4rem;
+  background-color: #fff;
+}
+.money .content .information {
+  background-color: #f5f3f0;
+  font-size: 0.1rem;
+  color: #b7b6b5;
+}
+.money .content .group {
+  height: 1rem;
+  border-bottom: 1px solid #eaeaea;
+  line-height: 1rem;
+  font-size: 0.12rem;
+}
+.money .content .group .left {
+  float: left;
+}
+.money .content .group .right {
+  float: right;
+}
+.money .content .group .txright {
+  float: right;
+}
+.money .content .group .txright input {
+  border: none;
+  margin-left: 0.2rem;
+}
+.money .content .group input:focus {
+  outline: none;
+}
+.money .sub {
+  width: 100%;
+  background-color: #f5f3f0;
+  overflow: hidden;
+}
+.money .sub .btn {
+  display: block;
+  width: 6.9rem;
+  height: 0.8rem;
+  background-color: #fff;
+  margin: 0.2rem auto;
+  font-size: 0.3rem;
+  color: #b7b6b5;
+  text-align: center;
+  line-height: 0.8rem;
+  text-decoration: none;
+  border-radius: 0.1;
+}
+
+.notice {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f3f0;
+  padding-top: 0.22rem;
+}
+.notice .time {
+  width: 1.25rem;
+  height: 0.45rem;
+  margin: 0 auto;
+  margin-bottom: 0.22rem;
+  background-color: #cdcdcd;
+  font-size: 0.3rem;
+  text-align: center;
+  line-height: 0.45rem;
+  text-decoration: none;
+  border-radius: 0.1rem;
+  color: #fff;
+}
+.notice .active {
+  width: 6.85rem;
+  height: 6.75rem;
+  background-color: #fff;
+  padding: 0 0.35rem;
+  margin: 0 auto;
+}
+.notice .active .bb {
+  height: 1.85rem;
+  width: 6.85rem;
+}
+.notice .active .bb .produce {
+  font-size: 0.15rem;
+  color: #060606;
+  float: left;
+  margin-top: 0.4rem;
+}
+.notice .active .bb .date {
+  height: 0.6rem;
+  width: 100%;
+  margin-top: 0.4rem;
+  font-size: 0.1rem;
+  color: #9d9d9d;
+  float: left;
+}
+.notice .active .photo {
+  width: 6.3rem;
+  height: 3.9rem;
+  border-bottom: 0.02rem solid #eaeaea;
+}
+.notice .active .photo .picture {
+  width: 6.3rem;
+  height: 3.5rem;
+}
+.notice .active .boult {
+  margin-top: 0.4rem;
+}
+.notice .active .boult .minute {
+  font-size: 0.1rem;
+  color: #3f3f3f;
+  float: left;
+}
+.notice .active .boult .arrows {
+  float: right;
+}
+.notice .footerBar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1rem;
+  background-color: #FFF;
+}
+.notice .footerBar ul {
+  width: 100%;
+  padding: 0 5%;
+  background-color: #fff;
+}
+.notice .footerBar ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.notice .footerBar ul > li {
+  width: 20%;
+  height: 1rem;
+  padding-top: 0.18rem;
+  text-align: center;
+  float: left;
+  color: #8d8d8d;
+}
+.notice .footerBar ul > li :last-child {
+  margin-right: 0;
+}
+.notice .footerBar ul > li a {
+  font-size: 0.16rem;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+.notice .footerBar ul > li span.fa {
+  font-size: 0.3rem;
+}
+.notice .footerBar ul li.active {
+  color: #ff9206;
+}
+
+.home-income {
+  width: 100%;
+  height: 100%;
+  background-color: #F5F3F0;
+}
+.home-income .top {
+  width: 100%;
+  height: 2.0rem;
+  background-color: #fff;
+}
+.home-income .top .date {
+  width: 100%;
+  height: 1.0rem;
+  padding: 0 5%;
+  font-size: 0.3rem;
+  border-bottom: 0.02rem solid #F2F2F2;
+}
+.home-income .top .date .left {
+  float: left;
+  line-height: 1.0rem;
+  color: #303030;
+}
+.home-income .top .date .right {
+  float: right;
+  line-height: 1.0rem;
+  color: #A2A2A2;
+}
+.home-income .bottom {
+  width: 100%;
+  margin-top: 0.22rem;
+  background-color: #fff;
+}
+.home-income .bottom .content {
+  width: 100%;
+  height: 1.38rem;
+  padding: 0 5%;
+  border-bottom: 0.02rem solid #F2F2F2;
+}
+.home-income .bottom .content > ul li {
+  width: 100%;
+  height: 0.69rem;
+}
+.home-income .bottom .content > ul li .left1 {
+  float: left;
+  line-height: 0.69rem;
+  color: #303030;
+  font-size: 0.3rem;
+}
+.home-income .bottom .content > ul li .right1 {
+  float: right;
+  line-height: 0.69rem;
+  color: #A2A2A2;
+  font-size: 0.27rem;
+}
+.home-income .bottom .content > ul li .left2 {
+  float: left;
+  line-height: 0.69rem;
+  color: #A2A2A2;
+  font-size: 0.22rem;
+}
+.home-income .bottom .content > ul li .right2 {
+  float: right;
+  line-height: 0.69rem;
+  color: #A2A2A2;
+  font-size: 0.27rem;
+}
+
+.product {
+  width: 100%;
+  height: 100%;
+  background-color: #F5F3F0;
+}
+.product .message {
+  width: 100%;
+  height: 5.45rem;
+  background-color: #fff;
+}
+.product .message > ul {
+  padding: 0 5%;
+  width: 100%;
+}
+.product .message > ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.product .message > ul > li {
+  width: 100%;
+  height: 0.92rem;
+  border-bottom: 0.02rem solid #F5F3F0;
+  font-size: 0.3rem;
+  line-height: 0.92rem;
+  color: #CBCBCB;
+  font-size: 0.3rem;
+}
+.product .message > ul > li a {
+  text-decoration: none;
+  color: inherit;
+}
+.product .message > ul > li a span {
+  padding: 0.3rem;
+  height: 0.92rem;
+  font-size: 0.3rem;
+}
+.product .message > ul li .fa.fa-angle-right {
+  float: right;
+  color: #CBCBCB;
+}
+.product .message > ul li:nth-child(1) .fa.fa-user {
+  font-size: 0.4rem;
+  color: #44B36A;
+}
+.product .message > ul li:nth-child(2) .fa.fa-money {
+  font-size: 0.4rem;
+  color: #44B36A;
+}
+.product .message > ul li:nth-child(3) .fa.fa-shield {
+  font-size: 0.4rem;
+  color: #44B36A;
+}
+.product .message > ul li:nth-child(4) .fa.fa-unlock {
+  font-size: 0.4rem;
+  color: #EB4F38;
+}
+.product .message > ul li:nth-child(5) .fa.fa-calculator {
+  font-size: 0.4rem;
+  color: #EB4F38;
+}
+.product .message > ul li:nth-child(6) .fa.fa-percent {
+  font-size: 0.4rem;
+  color: #F18C18;
+}
+
+.simple {
+  width: 100%;
+  height: 100%;
+  background-color: #F5F3F0;
+  color: #909090;
+  font-size: 0.27rem;
+}
+.simple > p {
+  width: 100%;
+  height: 0.38rem;
+  padding-left: 4%;
+  font-size: 0.24rem;
+}
+.simple section {
+  background-color: #fff;
+}
+.simple section ul {
+  width: 100%;
+  padding: 0 4%;
+}
+.simple section ul > li {
+  width: 100%;
+  height: 0.92rem;
+  border-bottom: 0.02rem solid #EBEBEB;
+  line-height: 0.92rem;
+}
+.simple section ul > li a {
+  color: inherit;
+  text-decoration: none;
+}
+.simple section ul > li a .fa.fa-angle-right {
+  float: right;
+  line-height: 0.92rem;
+}
+
+.order {
+  width: 100%;
+  height: 100%;
+  background-color: #F5F3F0;
+}
+.order .orderNav {
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.52rem;
+  background-color: #fff;
+}
+.order .orderNav span {
+  width: 33%;
+  height: 0.39rem;
+  text-align: center;
+  line-height: 0.8rem;
+  font-size: 0.28rem;
+}
+
 /*# sourceMappingURL=main.css.map */

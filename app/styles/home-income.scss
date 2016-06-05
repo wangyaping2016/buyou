@@ -1,0 +1,73 @@
+.home-income{
+	width: 100%;
+	height: 100%;
+	background-color:#F5F3F0;
+ 
+	.top{
+		width: 100%;
+		height: 2.0rem;
+		background-color: #fff;
+		.date{
+			width: 100%;
+			height: 1.0rem;
+			padding: 0 5%;
+			font-size: 0.3rem;
+			border-bottom: 0.02rem solid #F2F2F2;
+			.left{
+				float: left;
+				line-height: 1.0rem;
+				color: #303030;
+			}
+			.right{
+				float: right;
+				line-height: 1.0rem;
+				color: #A2A2A2;
+			}
+
+		}
+
+	}
+	.bottom{
+		width: 100%;
+	
+		margin-top: 0.22rem;
+		background-color: #fff;
+		.content{
+			width: 100%;
+			height: 1.38rem;
+			padding: 0 5%;
+			border-bottom: 0.02rem solid #F2F2F2;
+			>ul li{
+				width: 100%;
+				height: 0.69rem;
+				.left1{
+					float: left;
+					line-height: 0.69rem;
+					color: #303030;
+					font-size: 0.3rem;
+				}
+				.right1{
+					float: right;
+					line-height: 0.69rem;
+					color: #A2A2A2;
+					font-size: 0.27rem;
+
+				}	
+				.left2{
+					float: left;
+					line-height: 0.69rem;
+					color: #A2A2A2;
+					font-size: 0.22rem;
+				}
+				.right2{
+					float: right;
+					line-height: 0.69rem;
+					color: #A2A2A2;
+					font-size: 0.27rem;
+
+				}	
+			}
+			
+		}
+	}
+} 

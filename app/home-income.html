@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>buyou</title>
+
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- Place favicon.ico in the root directory -->
+
+<!-- build:css styles/vendor.css -->
+<!-- bower:css -->
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:css styles/main.css -->
+<link rel="stylesheet" href="styles/main.css">
+<!-- endbuild -->
+
+<!-- build:js scripts/vendor/modernizr.js -->
+<script src="libs/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+</head>
+<body>
+	<div class="home-income">
+
+		<section class="top">
+			<div class="date"><span class="left">结束日期</span><span class="right">选择日期</span></div>
+			<div class="date"><span class="left">开始日期</span><span class="right">选择日期</span></div>
+		</section>
+		<section class="bottom">
+			<div class="content">
+				<ul>
+					<li><span class="left1">网银</span><span class="right1">成交金额：1000元</span>
+					</li>
+					<li><span class="left2">10成功订单</span><span class="right2">分成金额：1000元</span>
+					</li>
+			    </ul>
+			</div>
+			<div class="content">
+				<ul>
+				<li>
+					<span class="left1">卡点</span><span class="right1">成交金额：1000元</span>
+				</li>
+				<li>
+					<span class="left2">10成功进单</span><span class="right2">分成金额：1000元</span>
+				</li>
+				</ul>
+			</div>
+			<div class="content">
+				<ul>
+					<li><span class="left1">支付宝</span><span class="right1">成交金额：1000元</span>
+					</li>
+					<li><span class="left2">10成功进单</span><span class="right2">分成金额：1000元</span>
+					</li>
+				</ul>
+				</div>
+			<div class="content">
+				<ul>
+					<li><span class="left1">财付通</span><span class="right1">成交金额：1000元</span>
+					</li>
+					<li><span class="left2">10成功订单</span><span class="right2">分成金额：1000元</span>
+					</li>
+				</ul>
+				</div>
+			<div class="content">
+				<ul>
+					<li><span class="left1">微信</span><span class="right1">成交金额：1000元</span>
+					</li>
+					<li><span class="left2">10成功订单</span><span class="right2">分成金额：1000元</span>
+					</li>
+				</ul>
+				</div>
+			<div class="content">
+				<ul>
+					<li><span class="left1">手机支付宝</span><span class="right1">成交金额：1000元</span>
+					</li>
+					<li><span class="left2">10成功订单</span><span class="right2">分成金额：1000元</span>
+					</li>
+				</ul>
+				</div>
+			<div class="content">
+				<ul>
+					<li><span class="left1">手机财付通</span><span class="right1">成交金额：1000元</span>
+					</li>
+					<li><span class="left2">10成功订单</span><span class="right2">分成金额：1000元</span>
+					</li>
+				</ul>
+				</div>
+			<div class="content">
+				<ul>
+					<li><span class="left1">手机QQ</span><span class="right1">成交金额：1000元</span>
+					</li>
+					<li><span class="left2">10成功订单</span><span class="right2">分成金额：1000元</span>
+					</li>
+				</ul>
+			</div>
+			<div class="content">
+				<ul>
+					<li><span class="left1">其他</span><span class="right1">成交金额：1000元</span>
+					</li>
+					<li><span class="left2">10成功订单</span><span class="right2">分成金额：1000元</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+
+	 <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- build:js libs/zepto/zepto.js -->
+    <script src="libs/zepto/zepto.js"></script>
+    <!-- endbuild -->
+
+    <script>
+        (function(window, document){
+            var designWidth = 7.5;
+            // orientationchange：屏幕发生翻转时触发的事件
+            var resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
+            function recalc(){
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / designWidth + 'px';
+            }
+
+            document.addEventListener('DOMContentLoaded', recalc, false);
+            window.addEventListener(resizeEvent, recalc, false);
+
+        })(window, document);
+    </script>
+</body>
+</html>

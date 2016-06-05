@@ -50,7 +50,7 @@
     
     
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
+    <!-- <script src="scripts/main.js"></script> -->
     <!-- build:js libs/zepto/zepto.js -->
     <script src="libs/zepto/zepto.js"></script>
     <!-- endbuild -->
@@ -67,11 +67,98 @@
         };
     </script>
     <script>
-        $(function(){
-            $('.loginBtn').bind('click', function(){
-                
-            })
-        })
+        // $(function(){
+        //     $('.loginBtn').bind('click', function(){
+        //         $.get({
+        //             url: 'http://app.buuyou.com/api/app',
+        //             data: {
+        //                 type: 'userlogin',
+        //                 data: {
+        //                     'Email': $('#userInput').val(),
+        //                     'Password': $('#passwordInput').val()
+        //                 }
+        //             },
+        //             success: function(data){
+        //                 console.log(data);
+        //             }
+        //         });
+        //     })
+        // })
+        var loginBtn = document.querySelector('.loginBtn');
+        var userInput = document.getElementById('userInput');
+        var passwordInput = document.getElementById('passwordInput');
+
+        // loginBtn.addEventListener('click', function(){
+        //     var XHR = new XMLHttpRequest();
+        //     XHR.onreadystatechange = function(){
+        //         if (XHR.readyState === 4) {
+        //             if (XHR.status === 200) {
+                        
+        //             }
+        //         }
+        //     };
+        //     var loginApiUrl = 'http://app.buuyou.com/api/app?type=userlogin&data='+ userInput.value +','+ passwordInput.value;
+        //     console.log(loginApiUrl);
+        //     XHR.open('get', loginApiUrl, true);
+        //     XHR.send();
+        // }, false);
+        loginBtn.addEventListener('click', function(){
+           var ajax = new Ajax;
+           ajax.get('http://app.buuyou.com/api/app', {
+              'type': 'userlogin',
+              'data': userInput.value + ',' + passwordInput.value
+           }, function(data){
+              console.log(data);
+           })
+        }, false);
+
+        function Ajax(){
+            this.url = '';
+            this.data = {};
+        };
+        Ajax.prototype = {
+            constructor: Ajax,
+            get: function(url, data, cb){
+                this.url = url;
+                this._extend(this.data, data);
+
+                this.XHR('get', this.url, data, cb);
+            },
+            XHR: function(type, url, data, cb) {
+                var XHR = new XMLHttpRequest();
+                var dataArr = [];
+                XHR.onreadystatechange = function(){
+                    if (XHR.readyState === 4) {
+                        if (XHR.status === 200) {
+                            cb && cb(JSON.parse(XHR.responseText));
+                        }
+                    }
+                }
+                for(var name in data){
+                    dataArr.push(name + '=' + data[name]);
+                }
+                url += ('?' + dataArr.join('&'));
+                XHR.open(type, url);
+                XHR.send();
+            },
+            _extend: function(){
+                var target = arguments[0] || {},
+                    copy,
+                    option;
+                if (arguments.length === 1) {
+                    target = this;
+                }
+                for(var i=1; i<arguments.length; i++){
+                    if ((option = arguments[i]) != null) {
+                        for(var name in option){
+                            copy = option[name];
+                            target[name] = copy;
+                        }
+                    }
+                }
+                return target;
+            }
+        }
     </script>
   </body>
 </html>

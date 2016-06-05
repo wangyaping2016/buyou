@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>buyou</title>
+
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- Place favicon.ico in the root directory -->
+
+<!-- build:css styles/vendor.css -->
+<!-- bower:css -->
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:css styles/main.css -->
+<link rel="stylesheet" href="styles/main.css">
+<!-- endbuild -->
+
+<!-- build:js scripts/vendor/modernizr.js -->
+<script src="libs/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+</head>
+<body>
+	<div class="product">
+        <div class="message">
+    		<ul>
+        		<li><a href="#"><span class="fa fa-user"></span>基本资料<span class=" fa fa-angle-right"></span></a></li>
+        		<li><a href="#"><span class="fa fa-money"></span>账户信息<span class=" fa fa-angle-right"></span></a></li>
+        		<li><a href="#"><span class="fa fa-shield  "></span>安全中心<span class=" fa fa-angle-right"></span></a></li>
+        		<li><a href="#"><span class="fa fa-unlock"></span>修改密码<span class=" fa fa-angle-right"></span></a></li>
+        		<li><a href="#"><span class="fa fa-calculator"></span>登陆日志<span class=" fa fa-angle-right"></span></a></li>
+        		<li><a href="#"><span class="fa fa-percent"></span>通道费率<span class=" fa fa-angle-right"></span></a></li>
+    		</ul>
+        </div>
+	</div>
+<script>
+        (function(window, document){
+            var designWidth = 7.5;
+            // orientationchange：屏幕发生翻转时触发的事件
+            var resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
+            function recalc(){
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / designWidth + 'px';
+            }
+
+            document.addEventListener('DOMContentLoaded', recalc, false);
+            window.addEventListener(resizeEvent, recalc, false);
+
+        })(window, document);
+    </script>
+</body>
+</html>

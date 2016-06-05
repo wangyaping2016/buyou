@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>buyou</title>
+
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- Place favicon.ico in the root directory -->
+
+<!-- build:css styles/vendor.css -->
+<!-- bower:css -->
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:css styles/main.css -->
+<link rel="stylesheet" href="styles/main.css">
+<!-- endbuild -->
+
+<!-- build:js scripts/vendor/modernizr.js -->
+<script src="libs/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+</head>
+<body>
+	<div class="simple">
+		<p>商户资料</p>
+
+
+
+		<section>
+			
+			<ul>
+				<li>
+					<a href="#"><span class="left">基本资料</span><span class=" fa fa-angle-right"></span></a>	
+				</li>
+				<li>
+					<a href="#"><span class="left">账户信息</span><span class=" fa fa-angle-right"></span></a>	
+				</li>
+				<li>
+					<a href="#"><span class="left">安全中心</span><span class=" fa fa-angle-right"></span></a>	
+				</li>
+				<li>
+					<a href="#"><span class="left">修改密码</span><span class=" fa fa-angle-right"></span></a>	
+				</li>
+			
+			</ul>
+		</section>
+		<p>订单管理</p>
+		<section>
+			
+			<ul>
+				<li>
+					<a href="#"><span class="left">成功订单</span><span class=" fa fa-angle-right"></span></a>	
+				</li>
+				<li>
+					<a href="#"><span class="left">失败订单</span><span class=" fa fa-angle-right"></span></a>	
+				</li>
+				<li>
+					<a href="#"><span class="left">支付中订单</span><span class=" fa fa-angle-right"></span></a>	
+				</li>
+				
+			</ul>
+		</section>
+		<p>财务管理</p>
+		<section>
+			
+			<ul>
+				<li>
+					<a href="#"><span class="left">提现申请</span><span class=" fa fa-angle-right"></span></a>	
+				</li>
+				<li>
+					<a href="#"><span class="left">申请列表</span><span class=" fa fa-angle-right"></span></a>	
+				</li>
+				<li>
+					<a href="#"><span class="left">已体现列表</span><span class=" fa fa-angle-right"></span></a>	
+				</li>
+				
+			</ul>
+		</section>
+		<p>统计分析</p>
+		<section>
+			
+			<ul>
+				<li>
+					<a href="#"><span class="left">通道收入分析</span><span class=" fa fa-angle-right"></span></a>	
+				</li>
+			</ul>
+		</section>
+	</div>
+
+
+
+
+
+
+
+
+ <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- build:js libs/zepto/zepto.js -->
+    <script src="libs/zepto/zepto.js"></script>
+    <!-- endbuild -->
+
+    <script>
+        (function(window, document){
+            var designWidth = 7.5;
+            // orientationchange：屏幕发生翻转时触发的事件
+            var resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
+            function recalc(){
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / designWidth + 'px';
+            }
+
+            document.addEventListener('DOMContentLoaded', recalc, false);
+            window.addEventListener(resizeEvent, recalc, false);
+
+        })(window, document);
+    </script>
+</body>
+</html>

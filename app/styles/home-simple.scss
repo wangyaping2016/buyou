@@ -1,0 +1,38 @@
+.simple{
+	width: 100%;
+	height: 100%;
+	background-color:#F5F3F0;
+	color: #909090;
+	font-size: 0.27rem;
+	>p{
+		width: 100%;
+		height: 0.38rem;
+		padding-left: 4%;
+		font-size: 0.24rem;
+
+	}
+	section{
+		background-color: #fff;
+		
+		ul{
+			width: 100%;
+			padding: 0 4%; 
+			>li{
+				width: 100%;
+				height: 0.92rem;
+				border-bottom: 0.02rem solid #EBEBEB;
+				line-height: 0.92rem;
+				a{
+					color: inherit;
+					text-decoration: none;
+					.fa.fa-angle-right{
+						float: right;
+						line-height: 0.92rem;
+					}
+
+				}
+			}
+		}
+
+	}
+}
